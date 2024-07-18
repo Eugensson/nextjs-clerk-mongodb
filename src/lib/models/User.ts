@@ -27,7 +27,7 @@ const userSchema = new Schema(
       type: String,
     },
   },
-  { timestamps: true, versionKey: false }
+  { timestamps: false, versionKey: false }
 );
 
 const User = models?.User || model("User", userSchema);
